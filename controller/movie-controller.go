@@ -64,7 +64,7 @@ func (*controller) CreateMovie(w http.ResponseWriter, r *http.Request) {
 	result, err2 := movieService.Create(&movie)
 	if err2 != nil {
 		w.WriteHeader(http.StatusInternalServerError)
-		json.NewEncoder(w).Encode(errors.ServiceError{"Error saving the post"})
+		json.NewEncoder(w).Encode(errors.ServiceError{"Error saving the movie"})
 	}
 	json.NewEncoder(w).Encode(result)
 }

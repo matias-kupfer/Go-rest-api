@@ -10,7 +10,7 @@ import (
 
 type repo struct{}
 
-func NewFirestorePostRepository() MovieRepository {
+func NewFirestoreMovieRepository() MovieRepository {
 	return &repo{}
 }
 

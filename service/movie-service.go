@@ -17,10 +17,10 @@ type MovieService interface {
 type service struct{}
 
 var (
-	repo = repository.NewFirestorePostRepository()
+	repo = repository.NewFirestoreMovieRepository()
 )
 
-func NewMovieService() MovieService {
+func NewMovieService(repository repository.MovieRepository) MovieService {
 	return &service{}
 }
 

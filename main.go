@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	movieService    service.MovieService       = service.NewMovieService()
+	movieService    service.MovieService       = service.NewMovieService(nil)
 	movieController controller.MovieController = controller.NewMovieController(movieService)
 	r               router.Router              = router.NewMuxRouter()
 )

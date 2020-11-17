@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/matiascfgm/restAPI/entity"
+	"github.com/matiascfgm/Go-rest-api/entity"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"testing"

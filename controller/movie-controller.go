@@ -2,9 +2,9 @@ package controller
 
 import (
 	"encoding/json"
-	"github.com/matiascfgm/restAPI/entity"
-	"github.com/matiascfgm/restAPI/errors"
-	"github.com/matiascfgm/restAPI/service"
+	"github.com/matiascfgm/Go-rest-api/entity"
+	"github.com/matiascfgm/Go-rest-api/errors"
+	"github.com/matiascfgm/Go-rest-api/service"
 	"net/http"
 )
 

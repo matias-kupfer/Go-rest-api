@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/matiascfgm/restAPI/controller"
-	router "github.com/matiascfgm/restAPI/http"
-	"github.com/matiascfgm/restAPI/service"
+	"github.com/matiascfgm/Go-rest-api/controller"
+	router "github.com/matiascfgm/Go-rest-api/http"
+	"github.com/matiascfgm/Go-rest-api/service"
 	"net/http"
 )
 

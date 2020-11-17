@@ -2,8 +2,8 @@ package service
 
 import (
 	"errors"
-	"github.com/matiascfgm/restAPI/entity"
-	"github.com/matiascfgm/restAPI/repository"
+	"github.com/matiascfgm/Go-rest-api/entity"
+	"github.com/matiascfgm/Go-rest-api/repository"
 	"math/rand"
 	"strconv"
 )

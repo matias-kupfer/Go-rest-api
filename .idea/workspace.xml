@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="608cd981-9d8a-408c-8288-71d7009d6936" name="Default Changelist" comment="" />
+    <list default="true" id="608cd981-9d8a-408c-8288-71d7009d6936" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Go-rest-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/movie-controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/movie-controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/firestore-repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/firestore-repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/movies-repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/movies-repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restAPI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/movie-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/movie-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/movie-service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/movie-service_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,17 +26,28 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1kBawpSGpm48DDvHkcyiAhnR3t5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
   <component name="RecentsManager">
@@ -35,9 +57,20 @@
       <recent name="$PROJECT_DIR$/respository" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestCreate in github.com/matiascfgm/restAPI/service">
+  <component name="RunManager" selected="Go Test.TestValidateEmptyMovie in github.com/matiascfgm/Go-rest-api/service">
+    <configuration name="TestCreate in github.com/matiascfgm/Go-rest-api/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-rest-api" />
+      <working_directory value="$PROJECT_DIR$/service" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/matiascfgm/Go-rest-api/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestCreate\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestCreate in github.com/matiascfgm/restAPI/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="api-project" />
+      <module name="Go-rest-api" />
       <working_directory value="$PROJECT_DIR$/service" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
@@ -48,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration name="TestFindAll in github.com/matiascfgm/restAPI/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="api-project" />
+      <module name="Go-rest-api" />
       <working_directory value="$PROJECT_DIR$/service" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
@@ -58,45 +91,35 @@
       <pattern value="^\QTestFindAll\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestValidateEmptyMovie in github.com/matiascfgm/restAPI/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="api-project" />
+    <configuration name="TestValidateEmptyMovie in github.com/matiascfgm/Go-rest-api/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-rest-api" />
       <working_directory value="$PROJECT_DIR$/service" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/matiascfgm/restAPI/service" />
+      <package value="github.com/matiascfgm/Go-rest-api/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestValidateEmptyMovie\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestValidateEmptyMovieTitle in github.com/matiascfgm/restAPI/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="api-project" />
+    <configuration name="TestValidateEmptyMovieTitle in github.com/matiascfgm/Go-rest-api/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-rest-api" />
       <working_directory value="$PROJECT_DIR$/service" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/matiascfgm/restAPI/service" />
+      <package value="github.com/matiascfgm/Go-rest-api/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestValidateEmptyMovieTitle\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/matiascfgm/restAPI/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="api-project" />
-      <working_directory value="$PROJECT_DIR$/service" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/matiascfgm/restAPI/service" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestValidateEmptyMovie in github.com/matiascfgm/Go-rest-api/service" />
+        <item itemvalue="Go Test.TestValidateEmptyMovieTitle in github.com/matiascfgm/Go-rest-api/service" />
+        <item itemvalue="Go Test.TestCreate in github.com/matiascfgm/Go-rest-api/service" />
         <item itemvalue="Go Test.TestCreate in github.com/matiascfgm/restAPI/service" />
         <item itemvalue="Go Test.TestFindAll in github.com/matiascfgm/restAPI/service" />
-        <item itemvalue="Go Test.TestValidateEmptyMovieTitle in github.com/matiascfgm/restAPI/service" />
-        <item itemvalue="Go Test.TestValidateEmptyMovie in github.com/matiascfgm/restAPI/service" />
-        <item itemvalue="Go Test.go test github.com/matiascfgm/restAPI/service" />
       </list>
     </recent_temporary>
   </component>
@@ -104,7 +127,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="520" y="287" key="#Go_Modules" timestamp="1605626726950">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="520" y="287" key="#Go_Modules/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605626726950" />
     <state x="444" y="282" key="#Notifications" timestamp="1605547053694">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -117,42 +150,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="459" y="247" key="#com.intellij.fileTypes.FileTypeChooser/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605382973723" />
-    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1605568642056">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1605627732424">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568642056" />
-    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1605568642051">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605627732424" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1605627732421">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568642051" />
-    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1605568642050">
+    <state width="1398" height="240" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605627732421" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1605627732420">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568642050" />
-    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1605568642055">
+    <state width="1398" height="240" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605627732420" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1605627732423">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568642055" />
-    <state width="1398" height="298" key="GridCell.Tab.1.bottom" timestamp="1605568643627">
+    <state width="1398" height="240" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605627732423" />
+    <state width="1398" height="218" key="GridCell.Tab.1.bottom" timestamp="1605606839774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.1.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568643627" />
-    <state width="1398" height="298" key="GridCell.Tab.1.center" timestamp="1605568643625">
+    <state width="1398" height="218" key="GridCell.Tab.1.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605606839774" />
+    <state width="1398" height="218" key="GridCell.Tab.1.center" timestamp="1605606839773">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.1.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568643625" />
-    <state width="1398" height="298" key="GridCell.Tab.1.left" timestamp="1605568643624">
+    <state width="1398" height="218" key="GridCell.Tab.1.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605606839773" />
+    <state width="1398" height="218" key="GridCell.Tab.1.left" timestamp="1605606839772">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.1.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568643624" />
-    <state width="1398" height="298" key="GridCell.Tab.1.right" timestamp="1605568643626">
+    <state width="1398" height="218" key="GridCell.Tab.1.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605606839772" />
+    <state width="1398" height="218" key="GridCell.Tab.1.right" timestamp="1605606839774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.1.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605568643626" />
-    <state x="420" y="189" width="600" height="522" key="find.popup" timestamp="1605555343716">
+    <state width="1398" height="218" key="GridCell.Tab.1.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605606839773" />
+    <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1605627466207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="420" y="189" width="600" height="522" key="find.popup/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605555343716" />
+    <state x="420" y="189" width="600" height="580" key="find.popup/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605627466207" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605552550158">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

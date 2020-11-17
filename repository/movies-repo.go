@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/matiascfgm/restAPI/entity"
+	"github.com/matiascfgm/Go-rest-api/entity"
 )
 
 type MovieRepository interface {

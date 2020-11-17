@@ -3,7 +3,7 @@ package repository
 import (
 	"cloud.google.com/go/firestore"
 	"context"
-	"github.com/matiascfgm/restAPI/entity"
+	"github.com/matiascfgm/Go-rest-api/entity"
 	"google.golang.org/api/option"
 	"log"
 )

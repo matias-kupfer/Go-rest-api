@@ -2,6 +2,7 @@ package controller
 
 import (
 	"encoding/json"
+	"github.com/gorilla/mux"
 	"github.com/matiascfgm/Go-rest-api/entity"
 	"github.com/matiascfgm/Go-rest-api/errors"
 	"github.com/matiascfgm/Go-rest-api/service"
@@ -10,7 +11,10 @@ import (
 
 type MovieController interface {
 	GetMovies(w http.ResponseWriter, r *http.Request)
+	GetMovieById(w http.ResponseWriter, r *http.Request)
 	CreateMovie(w http.ResponseWriter, r *http.Request)
+	DeleteMovie(w http.ResponseWriter, r *http.Request)
+	UpdateMovie(w http.ResponseWriter, r *http.Request)
 }
 
 type controller struct{}
@@ -36,17 +40,29 @@ func (*controller) GetMovies(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(movies)
 }
 
-/*func getMovie(w http.ResponseWriter, r *http.Request) {
+func (*controller) GetMovieById(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
-	for _, movie := range movies {
-		if movie.ID == params["id"] {
-			json.NewEncoder(w).Encode(movie)
-			return
-		}
+	movie, err := movieService.GetMovieById(params["id"])
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(errors.ServiceError{"Error getting the movie"})
 	}
-	json.NewEncoder(w).Encode(&entity.Movie{})
-}*/
+	w.WriteHeader(http.StatusOK)
+	json.NewEncoder(w).Encode(movie)
+}
+
+func (*controller) DeleteMovie(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	params := mux.Vars(r)
+	movie, err := movieService.DeleteMovie(params["id"])
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(errors.ServiceError{"Error getting the movie"})
+	}
+	w.WriteHeader(http.StatusOK)
+	json.NewEncoder(w).Encode(movie)
+}
 
 func (*controller) CreateMovie(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
@@ -62,6 +78,27 @@ func (*controller) CreateMovie(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(errors.ServiceError{err1.Error()})
 	}
 	result, err2 := movieService.Create(&movie)
+	if err2 != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(errors.ServiceError{"Error saving the movie"})
+	}
+	json.NewEncoder(w).Encode(result)
+}
+
+func (*controller) UpdateMovie(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	var movie entity.Movie
+	err := json.NewDecoder(r.Body).Decode(&movie)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(errors.ServiceError{"Error unmarshal data"})
+	}
+	err1 := movieService.Validate(&movie)
+	if err1 != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(errors.ServiceError{err1.Error()})
+	}
+	result, err2 := movieService.UpdateMovie(&movie)
 	if err2 != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		json.NewEncoder(w).Encode(errors.ServiceError{"Error saving the movie"})

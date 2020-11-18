@@ -86,3 +86,7 @@ func TestValidateEmptyMovieTitle(t *testing.T) {
 	assert.NotNil(t, err)
 	assert.Equal(t, "The movie title is empty", err.Error())
 }
+
+func TestGetMovieById(t *testing.T) {
+
+}
